@@ -1,0 +1,30 @@
+// Enhanced RGCN Model
+digraph {
+	A [label="Input Layer"]
+	B [label="RGCNConv Layer 1"]
+	C [label="LayerNorm 1"]
+	D [label="ReLU Activation 1"]
+	E [label="Dropout 1"]
+	F [label="RGCNConv Layer 2"]
+	G [label="LayerNorm 2"]
+	H [label="ReLU Activation 2"]
+	I [label="Dropout 2"]
+	J [label="Linear Layer 1"]
+	K [label="ReLU Activation 3"]
+	L [label="Dropout 3"]
+	M [label="Linear Layer 2"]
+	N [label="Log Softmax Output"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+	K -> L
+	L -> M
+	M -> N
+}
